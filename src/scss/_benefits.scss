@@ -1,0 +1,82 @@
+.benefits{
+    background-color: $menu_active_blue;
+    padding: 126px 0 133px 0;
+    &__wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__item{
+        width: 25%;
+        color: $fasad_title_darkgrey;   
+        position: relative;
+        &:before,
+        &:after {
+            content:"";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &:after{
+            width: 1px;
+            padding-bottom: 63px;
+            background-color: $benefit_after_white;
+        }
+        &:before{
+            color: $benefit_after_white;
+            font-family: PFD-Black, sans-serif;
+            font-size: 2.25rem;
+        }
+        &:nth-child(1){
+            padding: 5px 44px 0 42px;
+            &:before{
+                content:"01";
+                transform: rotate(-90deg) translate(-6px, -4px);
+            }
+            &:after{
+                transform: translate(26px, 65px);
+            }
+        }
+        &:nth-child(2){
+            padding: 5px 56px 0 34px;
+            &:before{
+                content:"02";
+                transform: rotate(-90deg) translate(-11px, -12px);
+            }
+            &:after{
+                transform: translate(19px, 66px);
+            }
+        }
+        &:nth-child(3){
+            margin-left: -3px;
+            padding: 3px 80px 0 0px;
+            &:before{
+                content:"03";
+                transform: rotate(-90deg) translate(-10px, -47px);
+            }
+            &:after{
+                transform: translate(-16px, 67px);
+            }
+        }
+        &:nth-child(4){
+            padding: 3.5px 0px 0 45px;
+            &:before{
+                content:"04";
+                transform: rotate(-90deg) translate(-13px, -1px);
+            }
+            &:after{
+                transform: translate(30px, 70px);
+            }
+        }
+
+
+    }
+    &__title{
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+    &__description{
+        line-height: 36px;
+        margin-top: 7px;
+    }
+}

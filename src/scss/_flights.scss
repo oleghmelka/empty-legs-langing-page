@@ -1,0 +1,117 @@
+.flights{
+    background: url(../img/plane.jpg) no-repeat;
+    padding: 82px 0 120px 0;
+    .section__title{
+        letter-spacing: 20px;
+        padding-left: 22px;
+    }
+    .section__subtitle{
+        margin: 61px 0 145px 0px;
+        letter-spacing: 1px;
+    }
+}
+.schedule{
+    color:$fasad_title_darkgrey;
+    width: 105.5%;
+    &__head,
+    &__row{
+        width: 100%;
+        display: flex;
+    }
+    &__head{
+        border-bottom: 2px solid $table_border;
+        text-transform: uppercase; 
+    }
+    &__row:hover{
+        color: $menu_active_blue;
+        text-decoration: underline;
+    }
+    &__head-item,
+    &__row-item{
+        width: 25%;
+        text-align: left;
+        transition: color .3s ease-in-out;
+        &:not(:last-child){
+            border-right: 1px solid $table_border;
+        }
+    }
+
+    &__head,
+    &__row {
+        &-item {
+            &:nth-child(1){
+                padding-left:25px;
+                padding-right:19px;
+            }
+            &:nth-child(2){
+                padding-left:40px;
+                padding-right:0;
+            }
+            &:nth-child(3){
+                padding-left:42px;
+                padding-right:10px;
+            }
+            &:nth-child(4){
+                padding-left:38px;
+                padding-right:10px;
+            }
+
+        }
+    }
+    &__head{
+        &-item {
+            padding-top:25px;
+            padding-bottom:28px;
+        }
+    }
+    &__row{
+        &-item {
+            padding-top:27px;
+            padding-bottom:12.4px;
+        }
+    }
+    
+}
+.purchase{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.flights__more{
+    line-height: 45px;
+    padding: 0px 42px;
+    letter-spacing: 2.5px;
+    margin: 125px auto 0 auto;
+    text-transform: uppercase;
+    border: 2px solid $menu_active_blue;
+    background-color: $menu_active_blue;
+    color: $fasad_title_darkgrey;
+    transition: background-color .3s ease,
+                color .3s ease;
+    display: block;
+    position: relative;
+    &:hover{
+        background-color: rgba($menu_active_blue, 0);
+        color: $menu_active_blue;
+        &:after{
+            border-left-color: $menu_active_blue;
+            transform: translate(-10px, -50%);
+        }
+    }
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-15px, -50%);
+        width: 8px;
+        height: 8px;
+        border-left: 6px solid $fasad_title_darkgrey;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        transition: transform .3s ease;
+        box-sizing: border-box;
+        transition: border-left-color .3s ease,
+                    transform .3s ease;
+    }
+}

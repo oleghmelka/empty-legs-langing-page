@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'PFD-Black';
+    src: url(../fonts/PFDinDisplayPro-Black.otf);
+}
+.pfd-black {
+    font-family: PFD-Black, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'PFD-Bold';
+    src: url(../fonts/PFDinDisplayPro-Bold.otf);
+}
+.pfd-bold {
+    font-family: PFD-Bold, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'PFD-ExtraThin';
+    src: url(../fonts/PFDinDisplayPro-ExtraThin.otf);
+}
+.pfd-extrathin {
+    font-family: PFD-ExtraThin, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'PFD-Medium';
+    src: url(../fonts/PFDinDisplayPro-Medium.otf);
+}
+.pfd-medium {
+    font-family: PFD-Medium, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'PFD-Regular';
+    src: url(../fonts/PFDinDisplayPro-Regular.otf);
+}
+.pfd-regular {
+    font-family: PFD-Regular, sans-serif;
+}
+
+
+@font-face {
+    font-family: 'PFD-Thin';
+    src: url(../fonts/PFDinDisplayPro-Thin.otf);
+}
+.pfd-thin {
+    font-family: PFD-Thin, sans-serif;
+}
+
+
+
+.xs{
+    font-size: 0.813rem;
+}
+
+.small{
+    font-size: 1rem;
+}
+
+.medium{
+    font-size: 1.25rem;
+}
+
+.medium_one{
+    font-size: 1.313rem;
+}
+.ml{
+    font-size: 1.75rem; 
+}
+
+.large{
+    font-size: 2.25rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
+
+.xxl{
+    font-size: 6.5rem;
+}

@@ -1,0 +1,68 @@
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header .workzone{
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    padding-top: 48.5px;
+}
+
+
+.menu{
+    position: relative;
+    display: flex;
+    &__list{
+        letter-spacing: 0.66px;
+    }
+    &__list,
+    &__sublist{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__sublist{
+        position: absolute;
+        padding-top: 35px;
+        opacity: 0;
+        transition: opacity .3s ease-in;
+    }
+
+
+    &__item:hover &__sublist{
+        opacity: 1;
+    }
+
+    &__link{
+        display: block;
+        color: $menu_grey;
+        transition: color .3s ease;
+        padding: 5px 15px;
+
+        &_active,
+        &:hover {
+            color: $menu_active_blue;
+        }
+    }
+    &__subitem:not(:last-child){
+        border-right: 1px solid $menu_grey;
+        padding: 0 25px 0 0;
+        margin-right: 44px;
+    }
+}
+
+.language{
+    padding: 5px 15px;
+    color: $menu_active_blue;
+    transition: color .3s ease;
+    &:hover {
+        color: $fasad_title_darkgrey;
+    }
+}
+
+.burger{
+    margin-left: -22px;
+}

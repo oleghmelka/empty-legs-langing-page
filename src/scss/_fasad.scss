@@ -1,0 +1,78 @@
+.fasad{
+    background: url(../img/fon1.jpg) no-repeat;
+    background-size: 100% auto;
+    padding-top: 251px;
+    padding-bottom: 115px;
+}
+.fasad_title{
+    display: block;
+    text-transform: uppercase;
+    color: $fasad_title_darkgrey;
+    text-align: center;
+}
+.quote{
+    padding: 43px 146px 0 268px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    &__text{
+        display: block;
+        width: 100%;
+        color: $fasad_title_darkgrey;
+        line-height: 30px;
+        letter-spacing: 0.5px;
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70px;
+            padding-bottom: 2px;
+            background-color: $fasad_title_darkgrey;
+            transform: translate(-90px,15px);
+        }
+    }
+    &__link{
+        color: $menu_active_blue;
+        text-transform: uppercase;
+        text-decoration: underline;
+        padding-right: 16px;
+        letter-spacing: 2.5px;
+        margin-top: 5px;
+        position: relative;
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(2px, -50%);
+            width: 8px;
+            height: 8px;
+            border-left: 6px solid $menu_active_blue;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            transition: transform .3s ease;
+            box-sizing: border-box;
+        }
+
+        &:hover:after{
+            transform: translate(6px, -50%);
+        }
+
+    }
+
+}
+.threetext {
+    margin: 13px 28px 0 21px;
+    letter-spacing: 0.5px;
+    &__paragraph{
+        color: $fasad_title_darkgrey;
+        line-height: 30px;
+        padding-top: 31px;
+    }
+
+}

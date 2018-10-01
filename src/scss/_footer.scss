@@ -1,0 +1,132 @@
+.footer{
+    padding: 76px 0;
+    background-color: $footer_black;
+    .section__title{
+        letter-spacing: 21.5px;
+        padding-left: 20px;
+    }
+    &__workspace{
+        padding: 0 35px;
+    }
+}   
+.contacts{
+    display: flex; 
+    margin-top: 117px; 
+    &__wrapper{
+        width: 33.33%;
+        &:nth-child(1){
+            padding-right: 125px;
+            .contacts__description{
+                margin-top: 19px;
+                line-height: 36px;
+                letter-spacing: -0.5px;
+            }
+            .contacts__title:before {
+                width: 21px;
+                height: 29px;
+                background-image: url(../img/marker.png);
+                transform: translate(2px, -4px);
+            }
+        }
+        &:nth-child(2){
+            padding-right: 0;
+            padding-left: 65px;
+            .contacts__description{
+                margin-top: 15px;
+                letter-spacing: -0.6px;
+            }
+            .contacts__item {
+
+                &:nth-child(1) .contacts__title:before{
+                    width: 16px;
+                    height: 28px;
+                    background-image: url(../img/phone.png);
+                    transform: translate(0px, -6px);
+                }
+
+                &:nth-child(2){
+                    margin-top: 51px;
+                    .contacts__title:before{
+                        width: 27px;
+                        height: 23px;
+                        background-image: url(../img/fax.png);
+                        transform: translate(-6px, -5px);
+                    }
+                }
+
+            }
+            
+
+        }
+        &:nth-child(3){
+            padding-right: 26px;
+            padding-left: 101px;
+            .contacts__title {
+                padding-left: 39px;
+                &:before {
+                    width: 25px;
+                    height: 19px;
+                    background-image: url(../img/envelope.png);
+                    transform: translate(1px, -2px);
+                }
+            }
+            .contacts__description{
+                margin-top: 15px;
+                letter-spacing: -0.6px;
+            }
+        }
+
+        &:nth-of-type(2) .contacts__description,
+        &:nth-of-type(3) .contacts__description {
+            white-space: nowrap;
+        }
+        
+    }
+    &__title{
+        text-transform: uppercase;
+        color: $footer_image;
+        padding-left: 30px;
+        letter-spacing: 2.5px;
+        position: relative;
+        &::before{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 100% auto;
+        }
+    }
+    &__description{
+        color: $footer_phones;
+
+
+    }
+}
+.copyright{
+    margin-top: 167px;
+    display: flex;
+    justify-content: space-between;
+    color: $footer_copyright;
+    position: relative;
+
+    &__item {
+        position: relative;
+
+        &:nth-of-type(2):after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 24px;
+            padding-bottom: 24px;
+            background-size: contain;
+            background-image: url(../img/apelsun.jpg);
+            transform: translate(37px, -10px);
+        }
+
+    }
+
+
+}
